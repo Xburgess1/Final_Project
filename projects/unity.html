@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unity</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body onload="showSlides(0)">
+    <script src="../js/script.js"></script>
+    <header>
+        <div>
+            <h1>Unity Project</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div id="bar">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="">About Me</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="slideshow">
+            <div class="slides fade">
+                <div class="numbers">1 / 5</div>
+                <img src="../Images/Unity1.png" style="width:100%; height:350px">
+                <div class="slideText">Main Menu</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">2 / 5</div>
+                <img src="../Images/Unity2.png" style="width:100%; height:350px">
+                <div class="slideText">Beginning of a level</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">3 / 5</div>
+                <img src="../Images/Unity3.png" style="width:100%; height:350px">
+                <div class="slideText">Player destroying an enemy</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">4 / 5</div>
+                <img src="../Images/Unity4.png" style="width:100%; height:350px">
+                <div class="slideText">Enemies destroying the player</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">5 / 5</div>
+                <img src="../Images/Unity5.png" style="width:100%; height:350px">
+                <div class="slideText">The player dashing forward</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+            <br />
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <br/>
+
+        <h1>Information</h1>
+        <p>This project is a game I am creating using Unity, the game is being developed for mobile devices. </p>
+
+    </main>
+</body>
+</html>

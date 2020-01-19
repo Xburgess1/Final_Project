@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <style>
+        main{
+            margin: 0 2.5% 0 2.5%;
+        }   
+
+        #projectGrid{
+            position: relative;
+            z-index: 4;
+            display: grid;
+            width: 100%;
+            height: 900px;
+            margin: 0;
+            grid-template-rows: repeat(5, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 8px;
+            justify-content: center;
+        }
+
+        .projects{
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 5px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+            .projects:hover, .projects:focus{
+                position: relative;
+                z-index: 1;
+                transform: scale(1.053);
+                transition: all 2.5s linear;
+                cursor: pointer;
+            }
+
+            .projects h1{
+                height: 50px;
+                margin: 0;
+            }
+
+        #unity{
+            color: white;
+            background-image: url(Images/unity3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -40px;
+        }
+
+        #rpg{
+            background-image: url(Images/pokemon1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -40px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Xavier</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div id="bar">
+            <a href="index.html">Home</a>
+            <a href="projects.html" id="active">Projects</a>
+            <a href="">About Me</a>
+        </div>
+    </nav>
+
+    <br/>
+
+    <main>
+        <div id="projectGrid">
+            <div class="projects" id="greenfoot">
+                <div>
+                    <h1>Greenfoot</h1>
+                </div>
+            </div>
+
+            <div class="projects" id="unity" onclick="window.location.href = 'projects/unity.html'">
+                <div>
+                    <h1>Unity</h1>
+                </div>
+            </div>
+
+            <div class="projects" id="rpg" onclick="window.location.href = 'projects/rpgmaker.html'">
+                <div>
+                    <h1>RPG Maker XP</h1>
+                </div>
+            </div>
+
+            <div class="projects" id="webDev1">
+                <div>
+                    <h1>Web Development</h1>
+                </div>
+            </div>
+
+            <div class="projects" id="webDev2">
+                <div>
+                    <h1>Web Development</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
