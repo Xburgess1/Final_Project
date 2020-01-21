@@ -46,6 +46,13 @@
                 margin: 0;
             }
 
+        #greenfoot{
+            background-image: url(Images/Greenfoot2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -95px;
+        }
+
         #unity{
             color: white;
             background-image: url(Images/unity3.png);
@@ -56,6 +63,13 @@
 
         #rpg{
             background-image: url(Images/pokemon1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -40px;
+        }
+        
+        #webDev1{
+            background-image: url(Images/WebGame1.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position-x: -40px;
@@ -82,7 +96,7 @@
 
     <main>
         <div id="projectGrid">
-            <div class="projects" id="greenfoot">
+            <div class="projects" id="greenfoot" onclick="window.location.href = 'projects/greenfoot.html'">
                 <div>
                     <h1>Greenfoot</h1>
                 </div>
@@ -100,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="projects" id="webDev1">
+            <div class="projects" id="webDev1" onclick="window.location.href = 'projects/webgame.html'">
                 <div>
                     <h1>Web Development</h1>
                 </div>

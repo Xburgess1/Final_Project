@@ -1,16 +1,5 @@
 ﻿@import "utils/_variables.scss";
-
-@mixin navGrid()
-{
-    -moz-grid-template-rows: repeat(1, 1fr);
-    -moz-grid-template-columns: repeat(3, 1fr);
-    -webkit-grid-template-rows: repeat(1, 1fr);
-    -webkit-grid-template-columns: repeat(3, 1fr);
-    -ms-grid-template-rows: repeat(1, 1fr);
-    -ms-grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-}
+@import "utils/_mixins.scss";
 
 *{
     font-family: Tahoma, Verdana, Helvetica, sans-serif;
@@ -67,11 +56,11 @@ nav #bar{
 }
 
 .slideshow{
-    max-width: 600px;
+    max-width: 800px;
     max-height: 600px;
     position: relative;
     margin: auto;
-    float: left;
+    
 }
 
 .slides{
@@ -125,14 +114,14 @@ nav #bar{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: $default-dot-color;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .activeSlide, .dot:hover{
-    background-color: #717171;
+    background-color: $default-dot-active;
 }
 
 .fade{
@@ -150,4 +139,17 @@ nav #bar{
 @keyframes fade{
     from {opacity: .4}
     to {opacity: 1}
+}
+
+#infoText{
+    float: right;
+}
+
+#statusText{
+    float: left;
+    display: inline;
+
+    a{
+        color: blue;
+    }
 }

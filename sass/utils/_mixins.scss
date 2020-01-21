@@ -1,0 +1,11 @@
+﻿@mixin navGrid()
+{
+    -moz-grid-template-rows: repeat(1, 1fr);
+    -moz-grid-template-columns: repeat(3, 1fr);
+    -webkit-grid-template-rows: repeat(1, 1fr);
+    -webkit-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-rows: repeat(1, 1fr);
+    -ms-grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
