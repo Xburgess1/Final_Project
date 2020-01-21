@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Game</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <style>
+        .slideshow img{
+            width: 100%;
+            height: 400px;
+        }
+
+        @media only screen and (max-width: 950px){
+            .slideshow img{
+                height: 340px;
+            }
+        }
+
+        @media only screen and (max-width: 770px){
+            .slideshow img{
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 580px){
+            .slideshow img{
+                height: 200px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body onload="showSlides(0)">
     <script src="../js/script.js"></script>
     <header>
         <div>
@@ -21,5 +46,65 @@
             <a href="">About Me</a>
         </div>
     </nav>
+
+    <main>
+        <div class="slideshow">
+            <div class="slides fade">
+                <div class="numbers">1 / 5</div>
+                <img src="../Images/WebGame1.png">
+                <div class="slideText" style="color:black">Main Menu</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">2 / 5</div>
+                <img src="../Images/WebGame2.png">
+                <div class="slideText" style="color:black">The start of level one</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">3 / 5</div>
+                <img src="../Images/WebGame3.png">
+                <div class="slideText" style="color:black">The start of the bonus level</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">4 / 5</div>
+                <img src="../Images/WebGame4.png">
+                <div class="slideText" style="color:black">Level two's lock</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">5 / 5</div>
+                <img src="../Images/WebGame5.png">
+                <div class="slideText" style="color:black">Level two's lock partly solved</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+            <br />
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <br />
+
+        <div id="infoText">
+            <h1>Information</h1>
+            <p>This project is a website puzzle game. The player will go through different webpages and solve the puzzles on the pages
+            to continue. There are a total of three playable levels, each with their own puzzles and challenges.</p>
+        </div>
+
+        <div id="statusText">
+            <h2>Status:</h2>
+            <p>Playable - <a href="https://xburgess1.github.io/freedom-friday/">Link</a></p>
+        </div>
+    </main>
 </body>
 </html>

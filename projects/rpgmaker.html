@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RPG Maker XP</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <style>
+        .slideshow img{
+            width: 100%;
+            height: 450px;
+        }
+
+        @media only screen and (max-width: 720px){
+            .slideshow img{
+                height: 360px;
+            }
+        }
+
+        @media only screen and (max-width: 590px){
+            .slideshow img{
+                height: 300px;
+            }
+        }
+        
+        @media only screen and (max-width: 400px)
+        {
+            .slideshow img{
+                height: 210px;
+            }
+        }
+    </style>
 </head>
 <body onload="showSlides(0)">
     <script src="../js/script.js"></script>
@@ -26,25 +51,25 @@
         <div class="slideshow">
             <div class="slides fade">
                 <div class="numbers">1 / 4</div>
-                <img src="../Images/Pokemon1.png" style="width:100%; height:450px">
+                <img src="../Images/Pokemon1.png">
                 <div class="slideText">Pokemon battle</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">2 / 4</div>
-                <img src="../Images/Pokemon2.png" style="width:100%; height:450px">
+                <img src="../Images/Pokemon2.png">
                 <div class="slideText">The entry area to a forest</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">3 / 4</div>
-                <img src="../Images/Pokemon3.png" style="width:100%; height:450px">
+                <img src="../Images/Pokemon3.png">
                 <div class="slideText">The home town of the player</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">4 / 4</div>
-                <img src="../Images/Pokemon4.png" style="width:100%; height:450px">
+                <img src="../Images/Pokemon4.png">
                 <div class="slideText">The first route</div>
             </div>
 

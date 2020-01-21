@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Greenfoot Project</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <style>
+        .slideshow img{
+            width: 100%;
+            height: 450px;
+        }
+
+        @media only screen and (max-width: 780px){
+            .slideshow img{
+                height: 370px;
+            }
+        }
+
+        @media only screen and (max-width: 590px){
+            .slideshow img{
+                height: 250px;
+            }
+        }
+
+        @media only screen and (max-width: 420px){
+            .slideshow img{
+                height: 180px;
+            }
+        }
+    </style>
 </head>
 <body onload="showSlides(0)">
     <script src="../js/script.js"></script>
@@ -26,31 +50,31 @@
         <div class="slideshow">
             <div class="slides fade">
                 <div class="numbers">1 / 5</div>
-                <img src="../Images/Greenfoot1.png" style="width:100%; height:450px">
+                <img src="../Images/Greenfoot1.png">
                 <div class="slideText">Main Menu</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">2 / 5</div>
-                <img src="../Images/Greenfoot2.png" style="width:100%; height:450px">
+                <img src="../Images/Greenfoot2.png">
                 <div class="slideText">Beginning of a level</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">3 / 5</div>
-                <img src="../Images/Greenfoot3.png" style="width:100%; height:450px">
+                <img src="../Images/Greenfoot3.png">
                 <div class="slideText">Player destroying an enemy</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">4 / 5</div>
-                <img src="../Images/Greenfoot4.png" style="width:100%; height:450px">
+                <img src="../Images/Greenfoot4.png">
                 <div class="slideText">Enemies destroying the player</div>
             </div>
 
             <div class="slides fade">
                 <div class="numbers">5 / 5</div>
-                <img src="../Images/Greenfoot5.png" style="width:100%; height:450px">
+                <img src="../Images/Greenfoot5.png">
                 <div class="slideText">The player dashing forward</div>
             </div>
 
